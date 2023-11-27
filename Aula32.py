@@ -20,16 +20,21 @@ descrito, exiba a saudação apropriada. Ex.
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 hora_digitada = input('Digite a hora: ')
-hora_digitada_inteiro = int(hora_digitada)
 
-if hora_digitada_inteiro >= 0 and hora_digitada_inteiro <= 11:
-    print('Bom dia')
-elif hora_digitada_inteiro >= 12 and hora_digitada_inteiro <= 17:
-    print('Boa tarde')
-elif hora_digitada_inteiro >=18 and hora_digitada_inteiro <=23:
-    print('Boa noite')
-else:
-    print('Essa hora não existe')
+try:
+    hora_digitada_inteiro = int(hora_digitada)
+
+    if hora_digitada_inteiro >= 0 and hora_digitada_inteiro <= 11:
+        print('Bom dia')
+    elif hora_digitada_inteiro >= 12 and hora_digitada_inteiro <= 17:
+        print('Boa tarde')
+    elif hora_digitada_inteiro >=18 and hora_digitada_inteiro <=23:
+        print('Boa noite')
+    else:
+        print('Essa hora não existe')
+        
+except:
+    print('Digite um número inteiro')
 
 """
 Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letras ou 
