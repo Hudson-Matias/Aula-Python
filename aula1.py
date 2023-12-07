@@ -1,6 +1,3 @@
-print('Explícito', 'é', 'melhor " do que implícito')
-
-
 """
 DocString -> Aspas duplas
 E escrever o que 
